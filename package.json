@@ -11,6 +11,7 @@
     "client"
   ],
   "files": [
+    "lib/",
     "dist/",
     "build/"
   ],
