@@ -2468,12 +2468,8 @@
 
           this.transport.removeAllListeners();
 
-          if (typeof removeEventListener === "function") {
-            try {
-              removeEventListener("offline", this.offlineEventListener, false);
-            } catch (e) {
-              console.log("Cordova - Unable to remove listener", this.offlineEventListener, e);
-            }
+          if (typeof removeEventListener === "function" && typeof this.offlineEventListener !== "undefined") {
+            removeEventListener("offline", this.offlineEventListener, false);
           } // set ready state
 
 
