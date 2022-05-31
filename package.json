@@ -34,7 +34,7 @@
   "dependencies": {
     "@socket.io/component-emitter": "~3.1.0",
     "debug": "~4.3.2",
-    "engine.io-client": "joseph-montanez/engine.io-client#main",
+    "engine.io-client": "github:joseph-montanez/engine.io-client#main",
     "socket.io-parser": "~4.2.0"
   },
   "devDependencies": {
@@ -77,8 +77,7 @@
     "zuul-ngrok": "4.0.0"
   },
   "overrides": {
-    "ngrok": "4.3.1",
-    "engine.io-client": "joseph-montanez/engine.io-client#main"
+    "ngrok": "4.3.1"
   },
   "scripts": {
     "compile": "rimraf ./build && tsc && tsc -p tsconfig.esm.json && ./postcompile.sh",

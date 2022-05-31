@@ -358,6 +358,7 @@ export class Manager<
         socket.emit("error", new Error("timeout"));
       }, timeout);
 
+      // @ts-ignore
       if (this.opts.autoUnref) {
         timer.unref();
       }
@@ -594,6 +595,7 @@ export class Manager<
         });
       }, delay);
 
+      // @ts-ignore
       if (this.opts.autoUnref) {
         timer.unref();
       }

@@ -168,6 +168,7 @@ export class Socket<
     ...args: EventParams<EmitEvents, Ev>
   ): this {
     if (RESERVED_EVENTS.hasOwnProperty(ev)) {
+      // @ts-ignore
       throw new Error('"' + ev + '" is a reserved event name');
     }
 
